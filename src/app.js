@@ -5,7 +5,7 @@ const PORT = 3000;
 const app = express();
 app.set("view engine", "pug");
 app.use(express.static(path.join(__dirname, "/assets")));
-// 있어야할 곳? => /views
+// pug 있어야할 곳? => /views
 app.get("/", (req, res) => {
   res.render("test");
 });
